@@ -6,7 +6,7 @@ Tab Completion for jQuery. Tab-complete allows developers to specify a list of o
 
 You can run:
 
-```bower install```
+```bower install tab-complete```
 
 or manually copy the tab-complete files to your project.
 

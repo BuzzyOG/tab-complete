@@ -4,7 +4,7 @@
     var completers = options.getOptions();
     for (var i = 0; i < completers.length; i++) {
       trie.add(completers[i]);
-    };
+    }
     var index = 0;
     var val;
     var words;
