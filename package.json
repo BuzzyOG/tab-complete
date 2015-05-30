@@ -1,0 +1,24 @@
+{
+  "name": "tab-complete",
+  "version": "1.0.0",
+  "description": "jQuery Tab Complete Plugin",
+  "main": "jquery.tab-complete.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jake0oo0/tab-complete.git"
+  },
+  "keywords": [
+    "tab-complete",
+    "jquery",
+    "input"
+  ],
+  "author": "Jake",
+  "license": "IMT",
+  "bugs": {
+    "url": "https://github.com/Jake0oo0/tab-complete/issues"
+  },
+  "homepage": "https://github.com/Jake0oo0/tab-complete",
+  "dependencies": {
+    "triejs": "^0.1.5"
+  }
+}
