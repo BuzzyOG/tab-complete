@@ -4,23 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Tab-complete by Jake0oo0</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
   <body>
     <div class="wrapper">
       <header>
         <h1>Tab-complete</h1>
         <p>jQuery Tab Complete plugin</p>
-
         <p class="view"><a href="https://github.com/Jake0oo0/tab-complete">View the Project on GitHub <small>Jake0oo0/tab-complete</small></a></p>
-
-
         <ul>
           <li><a href="https://github.com/Jake0oo0/tab-complete/zipball/master">Download <strong>ZIP File</strong></a></li>
           <li><a href="https://github.com/Jake0oo0/tab-complete/tarball/master">Download <strong>TAR Ball</strong></a></li>
@@ -29,40 +22,45 @@
       </header>
       <section>
         <h1>
-<a id="jquery-tab-complete" class="anchor" href="#jquery-tab-complete" aria-hidden="true"><span class="octicon octicon-link"></span></a>jQuery Tab Complete</h1>
-
-<p>Tab Completion for jQuery. Tab-complete allows developers to specify a list of options to be auto completed when typing in the binded input. Words can be auto completed from anywhere within the text input, the beginning, middle, or end.</p>
-
-<h2>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
-
-<p>You can run:</p>
-
-<p><code>bower install tab-complete</code></p>
-
-<p><code>npm install tab-complete</code></p>
-
-<p>or manually copy the tab-complete files to your project.</p>
-
-<p>Installing tab-complete via NPM will install <a href="https://github.com/pthurlow/triejs">TrieJS</a> as a module for you.</p>
-
-<h2>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
-
-<p>Include <a href="https://github.com/pthurlow/triejs">TrieJS</a> and Tab-Complete</p>
-
-<pre><code>&lt;script src="trie.min.js"&gt;&lt;/script&gt;
-&lt;script src="jquery.tab-complete.js"&gt;&lt;/script&gt;
-</code></pre>
-
-<pre><code>$("#example-input").tabComplete({
-    getOptions: function() {
-        return ["John", "Jake", "Joe", "Sam", "Gil", "Ken", "Garret"]
-    }
-});
-</code></pre>
-
-<p>The getOptions() function should return an array of options that will be auto-completed.</p>
+          <a id="jquery-tab-complete" class="anchor" href="#jquery-tab-complete" aria-hidden="true"><span class="octicon octicon-link"></span></a>jQuery Tab Complete
+        </h1>
+        <p>Tab Completion for jQuery. Tab-complete allows developers to specify a list of options to be auto completed when typing in the binded input. Words can be auto completed from anywhere within the text input, the beginning, middle, or end.</p>
+        <h2>
+          <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation
+        </h2>
+        <p>You can run:</p>
+        <p><code>bower install tab-complete</code></p>
+        <p><code>npm install tab-complete</code></p>
+        <p>or manually copy the tab-complete files to your project.</p>
+        <p>Installing tab-complete via NPM will install <a href="https://github.com/pthurlow/triejs">TrieJS</a> as a module for you.</p>
+        <h2>
+          <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage
+        </h2>
+        <p>Include <a href="https://github.com/pthurlow/triejs">TrieJS</a> and Tab-Complete</p>
+        <pre><code>&lt;script src="trie.min.js"&gt;&lt;/script&gt;
+                &lt;script src="jquery.tab-complete.js"&gt;&lt;/script&gt;
+              </code></pre>
+        <pre><code>$("#example-input").tabComplete({
+                getOptions: function() {
+                return ["John", "Jake", "Joe", "Sam", "Gil", "Ken", "Garret"]
+              }
+            });
+          </code></pre>
+        <p>The getOptions() function should return an array of options that will be auto-completed.</p>
+        <h2>
+          <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples
+        </h2>
+        <form>
+          <label>Input Tab Complete</label>
+          <input class="form-control" id="example-input">
+          <p class='help-block'>Try entering a name here and pressing the <code>tab</code> key! Names are automatically completed, and pressing <code>tab</code> again will cycle to the next option. The cursor position is automatically set, making the transition look seamless!</p>
+        </form>
+        <br>
+        <form>
+          <label>Text Area Tab Complete</label>
+          <textarea class="form-control" id="example-textarea"></textarea>
+          <p class='help-block'>Try entering part of a city, and press <code>tab</code>! The plugin works with multi-word entries, such as San Francisco and New York.</p>
+        </form>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/Jake0oo0">Jake0oo0</a></p>
@@ -70,6 +68,24 @@
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://raw.github.com/pthurlow/triejs/master/src/trie.min.js"></script>
+    <script src="https://raw.githubusercontent.com/Jake0oo0/tab-complete/master/jquery.tab-complete.js"></script>
+    <script>
+      $(document).ready(function(){
+      
+        $("#example-input").tabComplete({
+          getOptions: function() {
+            return ["John", "Jake", "Joe", "Sam", "Gil", "Ken", "Garret"]
+          }
+        });
+      
+        $("#example-textarea").tabComplete({
+          getOptions: function() {
+            return ["Chicago", "New York", "Philidelphia", "Seattle", "San Francisco"]
+          }
+        });
+      });
+    </script>
   </body>
 </html>
