@@ -8,8 +8,6 @@ You can run:
 
 ```bower install tab-complete```
 
-or 
-
 ```npm install tab-complete```
 
 or manually copy the tab-complete files to your project.
