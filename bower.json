@@ -1,0 +1,23 @@
+{
+  "name": "tab-complete",
+  "main": "tab-complete.js",
+  "version": "1.0.0",
+  "authors": [
+    "Jake"
+  ],
+  "description": "jQuery Tab Complete Plugin",
+  "keywords": [
+    "jquery",
+    "tab-complete",
+    "input",
+    "tabs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
