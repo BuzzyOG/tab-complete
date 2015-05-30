@@ -1,6 +1,6 @@
 {
   "name": "tab-complete",
-  "main": "tab-complete.js",
+  "main": "jquery.tab-complete.js",
   "version": "1.0.0",
   "authors": [
     "Jake"

@@ -8,8 +8,13 @@ You can run:
 
 ```bower install tab-complete```
 
+or 
+
+```npm install tab-complete```
+
 or manually copy the tab-complete files to your project.
 
+Installing tab-complete via NPM will install [TrieJS](https://github.com/pthurlow/triejs) as a module for you.
 
 ## Usage
 
@@ -23,7 +28,7 @@ Include [TrieJS](https://github.com/pthurlow/triejs) and Tab-Complete
 ```
 $("#example-input").tabComplete({
 	getOptions: function() {
-	return ["John", "Jake", "Joe", "Sam", "Gil", "Ken", "Garret"]
+		return ["John", "Jake", "Joe", "Sam", "Gil", "Ken", "Garret"]
 	}
 });
 ```
